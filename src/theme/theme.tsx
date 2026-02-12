@@ -6,63 +6,90 @@ import '@fontsource/inter/700.css';
 
 
 const darkTheme = createTheme({
-    palette:{
-        primary:{
+    palette: {
+        primary: {
+            main: "hsl(232, 19%, 15%)"
+        },
+        secondary: {
+            main: "hsl(232, 19%, 15%)"
+
+        },
+        background: {
+            default: "hsl(230, 17%, 14%)",
+            paper: "hsl(228, 28%, 20%)"
+        },
+        text: {
+            primary: "hsl(0, 100%, 100%)",
+            secondary: "hsl(230, 22%, 74%)"
+        },
+        success:{
             main:"hsl(163, 72%, 41%)"
         },
-        secondary:{
-            main:"hsl(232, 19%, 15%)"
-        },
-        background:{
-            default:"hsl(230, 17%, 14%)",
-            paper:"hsl(228, 28%, 20%)"
-        },
-        text:{
-            primary:"hsl(0, 100%, 100%)",
-            secondary:"hsl(230, 22%, 74%)"
+        error:{
+            main:'hsl(356, 69%, 56%)'
         }
     },
-    typography:{
+    typography: {
         fontFamily: 'Inter, sans-serif',
-        h2:{
-            fontWeight:"700"
+        h1:{
+            fontWeight:"700",
+            fontSize:"80px"
         },
-        h4:{
-            fontWeight:"700"
+        h2: {
+            fontWeight: "700"
         },
+        h4: {
+            fontWeight: "700"
+        },
+        body2:{
+            fontWeight:"700"
+        }
     }
 
 });
 
 const lightTheme = createTheme({
-    palette:{
-        primary:{
+    palette: {
+        primary: {
+            main: "hsl(225, 100%, 98%)",
+            light:"hsl(230, 17%, 91%)"
+        },
+        secondary: {
+            main: "hsl(225, 100%, 98%)"
+        },
+        text: {
+            primary: "hsl(230, 17%, 14%)",
+            secondary: "hsl(228, 12%, 44%)"
+        },
+        background: {
+            default: "hsl(0, 100%, 100%)",
+            paper: "hsl(227, 47%, 96%)"
+
+        },
+        success:{
             main:"hsl(163, 72%, 41%)"
         },
-        secondary:{
-           main:"hsl(225, 100%, 98%)" 
-        },
-        text:{
-            primary:"hsl(230, 17%, 14%)", 
-            secondary:"hsl(228, 12%, 44%)"
-        },
-        background:{
-            default:"hsl(0, 100%, 100%)",
-            paper:"hsl(227, 47%, 96%)"
-            
-        },
-        
+        error:{
+            main:'hsl(356, 69%, 56%)'
+        }
     },
-    typography:{
-        fontFamily: 'Inter, sans-serif',
-        h2:{
-            fontWeight:"700"
-        },
-        h4:{
-            fontWeight:"700"
-        },
 
+    typography: {
+        fontFamily: 'Inter, sans-serif',
+        h1:{
+            fontWeight:"700",
+            fontSize:"80px"
+        },
+        h2: {
+            fontWeight: "700"
+        },
+        h4: {
+            fontWeight: "700"
+        },
+        body2:{
+            fontWeight:"700"
+        }
     },
 });
 
-export {darkTheme, lightTheme};
+export { darkTheme, lightTheme };

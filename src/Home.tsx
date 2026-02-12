@@ -1,7 +1,10 @@
 import { Box, Card, Stack, Typography } from "@mui/material";
 import SocialMediaCard from "./Components/SocialMediaCard"
-import iconInstagram from "../images/icon-instagram.svg";
 import CustomizedSwitch from "./Components/Switch";
+import iconInstagram from "../images/icon-instagram.svg";
+import iconTwitter from "../images/icon-twitter.svg"
+import iconFacebook from "../images/icon-facebook.svg"
+import iconYouTube from "../images/icon-youtube.svg"
 
 type CustomizedSwitchProps = {
     toggleTheme: (event: React.ChangeEvent<HTMLInputElement, Element>, checkd: boolean) => void
@@ -52,7 +55,7 @@ const Home = ({ toggleTheme }: CustomizedSwitchProps) => {
                             <Typography variant="h4">
                                 Social Media Dashboard
                             </Typography>
-                            <Typography variant="caption" color="textSecondary">
+                            <Typography variant="h6" color="textSecondary">
                                 Total Followers:23,004
                             </Typography>
                         </Box>
@@ -67,33 +70,33 @@ const Home = ({ toggleTheme }: CustomizedSwitchProps) => {
                         alignItems={"center"}
                         gap={{ xs: '10px', sm: "20px" }}
                     >
-                        <SocialMediaCard color="primary.main"
-                            number="1000"
-                            entry="100"
-                            Icon={iconInstagram}
-                            at="gmail.com"
-                            typedEntry="Follower"
+                        <SocialMediaCard color="hsl(208, 92%, 53%)"
+                            number="1987"
+                            entry="12"
+                            Icon={iconFacebook}
+                            at="@nathanf"
+                            typedEntry="Followers"
                         />
-                        <SocialMediaCard color="primary.main"
-                            number="1000"
-                            entry="100"
-                            Icon={iconInstagram}
-                            at="gmail.com"
-                            typedEntry="Follower"
+                        <SocialMediaCard color="hsl(203, 89%, 53%)"
+                            number="1044"
+                            entry="99"
+                            Icon={iconTwitter}
+                            at="@nathanf"
+                            typedEntry="Followers"
                         />
-                        <SocialMediaCard color="primary.main"
-                            number="1000"
-                            entry="100"
+                        <SocialMediaCard color="linear-gradient(to right , hsl(37, 97%, 70%) , hsl(5, 77%, 71%) , hsl(329, 70%, 58%))"
+                            number="11K"
+                            entry="1099"
                             Icon={iconInstagram}
-                            at="gmail.com"
-                            typedEntry="Follower"
+                            at="@realnathanf"
+                            typedEntry="Followers"
                         />
-                        <SocialMediaCard color="primary.main"
-                            number="1000"
-                            entry="100"
-                            Icon={iconInstagram}
-                            at="gmail.com"
-                            typedEntry="Follower"
+                        <SocialMediaCard color="hsl(348, 97%, 39%)"
+                            number="8239"
+                            entry="-144"
+                            Icon={iconYouTube}
+                            at="Nathan F"
+                            typedEntry="Subscribes"
                         />
 
                     </Box>

@@ -36,7 +36,6 @@ export default function CustomizedSwitch({ toggleTheme }: CustomizedSwitchProps)
               },
             },
             '&.Mui-focusVisible .MuiSwitch-thumb': {
-              color: '#33cf4d',
               width: 19,
               height: 19,
 
@@ -50,6 +49,8 @@ export default function CustomizedSwitch({ toggleTheme }: CustomizedSwitchProps)
             },
           },
           '& .MuiSwitch-thumb': {
+            bgcolor:"background.paper",
+
             width: 19,
             height: 19,
             boxShadow: "none",

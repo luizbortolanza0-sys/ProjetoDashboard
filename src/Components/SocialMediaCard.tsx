@@ -1,5 +1,4 @@
 import { Box, Card, Typography } from "@mui/material";
-import { useState } from "react";
 import IconUp from "../../images/icon-up.svg"
 import IconDown from "../../images/icon-down.svg"
 

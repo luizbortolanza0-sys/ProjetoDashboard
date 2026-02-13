@@ -1,10 +1,13 @@
 import { Box, Card, Stack, Typography } from "@mui/material";
 import SocialMediaCard from "./Components/SocialMediaCard"
 import CustomizedSwitch from "./Components/Switch";
+import OverViewBox from "./Components/OverViewBox";
+
 import iconInstagram from "../images/icon-instagram.svg";
 import iconTwitter from "../images/icon-twitter.svg"
 import iconFacebook from "../images/icon-facebook.svg"
 import iconYouTube from "../images/icon-youtube.svg"
+import OverviewCard from "./Components/OverViewCard";
 
 type CustomizedSwitchProps = {
     toggleTheme: (event: React.ChangeEvent<HTMLInputElement, Element>, checkd: boolean) => void
@@ -39,6 +42,7 @@ const Home = ({ toggleTheme }: CustomizedSwitchProps) => {
                     <Box
                         width={"100%"}
                         display={"flex"}
+                        gap="20px"
                         flexDirection={{ xs: "column", sm: 'row' }}
                         justifyContent={'space-between'}
                         alignItems={"center"}
@@ -59,9 +63,23 @@ const Home = ({ toggleTheme }: CustomizedSwitchProps) => {
                                 Total Followers:23,004
                             </Typography>
                         </Box>
-                        <CustomizedSwitch
-                            toggleTheme={toggleTheme}
-                        />
+                        <Box
+                        display={"flex"}
+                        alignItems={"center"}
+                        gap={"10px"}
+                        width={{xs:"100%" , sm:"auto"}}
+                        justifyContent={"space-between"}
+                        >
+                            <Typography
+                            fontWeight={"700"}
+                            >
+                                Dark Mode
+                            </Typography>
+                            <CustomizedSwitch
+                              toggleTheme={toggleTheme}
+                            />
+                        </Box>
+                            
                     </Box>
                     <Box
                         width={"100%"}
@@ -103,14 +121,14 @@ const Home = ({ toggleTheme }: CustomizedSwitchProps) => {
                     <Box
                         width={"100%"}
                         display={"flex"}
-                        flexDirection={{ xs: "column", sm: 'row' }}
-                        justifyContent={'space-between'}
-                        alignItems={"center"}
+                        flexDirection="column"
+                        gap={"20px"}
+                        py={"45px"}
                     >
                         <Typography
                             variant="h4"
                         >Overview - Today</Typography>
-                        {/*Cards*/}
+                        <OverViewBox/>
 
                     </Box>
                 </Box>

@@ -63,8 +63,7 @@ export default function CustomizedSwitch({ toggleTheme }: CustomizedSwitchProps)
         }}
 
         defaultChecked value={true} onChange={toggleTheme} />}
-      label="Darkmode"
-      labelPlacement='start'
+      label=""
     />
   );
 }
